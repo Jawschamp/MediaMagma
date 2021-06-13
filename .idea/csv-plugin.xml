@@ -3,6 +3,13 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="C:\Program Files\JetBrains\PyCharm Community Edition 2020.2.3\plugins\python-ce\helpers\typeshed\stdlib\3\ntpath.pyi">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\FileOperations\FileOperations.py">
           <value>
             <Attribute>

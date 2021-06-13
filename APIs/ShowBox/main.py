@@ -12,22 +12,15 @@ class ShowBoxAPIParams:
     # Finish country list codes...
 class ShowBoxDownloader():
     def download_stream():
+        # maybe use the Selenium API select the element
+        # and increase to specified said seg#
+        #req = requests.get(host + "/" + playback, + "/", key, "/", quality, "/", segment + ".ts")
+        return whole
 
-        """
-        starting_seg is defined by the streamer
-        network and counts up from there..
-        key is a parameter in the url aka strip.url..."""
     def validate_and_strip(url):
         req = requests.get(url)
-        global host, playback, key, quality, segment
-        host = req.host
-        playback = "v2-hls-playback"
-        key = url.strip(host + "/" + playback + "/")
-        quality = url.strip(host + "/" + playback + "/" + key)
-        print(key)
-
-        if int(200) == req.status_code:
-            ShowBoxDownloader.download_stream()
+        #if int(200) == req.status_code:
+        #    ShowBoxDownloader.download_stream()
 
         # host:port:/playback:/key:quality:/seg.ts
 
