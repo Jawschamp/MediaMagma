@@ -1,4 +1,7 @@
 import requests
+import wget
+import os
+
 
 class ShowBoxAPIParams:
     genre_list = ["Action", "Comedy", "Family", "Kids", "Reality",
@@ -10,22 +13,27 @@ class ShowBoxAPIParams:
     # Fix names
     country_list = ["AR"]
     # Finish country list codes...
-class ShowBoxDownloader():
-    def download_stream():
-        # maybe use the Selenium API select the element
-        # and increase to specified said seg#
-        #req = requests.get(host + "/" + playback, + "/", key, "/", quality, "/", segment + ".ts")
-        return whole
 
+
+class ShowBoxDownloader():
+    def download_stream(url, num_of_segs):
+        os.chdir(r"D:\Github\MediaMagmaV2\images\Moves")
+        wget.download(url)
+        #for i in range(1, num_of_segs):
+            #pass
+
+            # strip this part
+
+
+
+
+        # TODO: Figure out place # of said value: aka ``chars_after_segs``.
+    def create_folder(movie_name):
+        os.chdir(r"D:\Github\MediaMagmaV2\images\Moves")
+        os.mkdir(movie_name)
     def validate_and_strip(url):
         req = requests.get(url)
-        #if int(200) == req.status_code:
-        #    ShowBoxDownloader.download_stream()
 
-        # host:port:/playback:/key:quality:/seg.ts
-
-        
-        req = requests.get(url)
 
 class ShowBoxAPI():
     class Endpoints:
