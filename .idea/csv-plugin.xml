@@ -10,6 +10,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\APIs\SegDownloader\downloader.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\APIs\ShowBox\main.py">
           <value>
             <Attribute>
